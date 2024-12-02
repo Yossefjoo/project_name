@@ -1,0 +1,33 @@
+GET http://localhost:5058/games
+
+###
+GET http://localhost:5058/games/5
+
+
+###
+POST http://localhost:5058/games
+Content-Type: application/json
+
+
+
+{
+    
+    "genre":"Survival",
+    "price":20,
+    "releaseDate":"2011-11-18"
+}
+
+
+###
+PUT http://localhost:5058/games/1
+Content-Type: application/json
+
+{
+    
+    "genre": "fottballgames",
+    "price":70,
+    "releaseDate":"2024-09-15"
+}
+
+###
+DELETE http://localhost:5058/games/3
